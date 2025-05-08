@@ -1,0 +1,234 @@
+/* Reset básico de estilos: remove margens e preenchimentos padrões de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que as larguras e alturas incluam bordas e preenchimentos */
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte da página */
+    background-color: #f5f5f5; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre as linhas de texto */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo escura para o cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 20px 0; /* Espaçamento interno em cima e embaixo */
+    position: sticky; /* Faz o cabeçalho fixar no topo quando rolar a página */
+    top: 0; /* Garante que o cabeçalho fique no topo */
+    z-index: 1000; /* Garante que o cabeçalho fique por cima de outros elementos */
+}
+
+/* Estilo do menu de navegação no cabeçalho */
+header nav ul {
+    display: flex; /* Alinha os itens em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores de lista */
+}
+
+/* Estilo para cada item do menu */
+header nav ul li {
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+}
+
+/* Estilo dos links do menu */
+header nav ul li a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.1em; /* Aumenta o tamanho da fonte */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+/* Efeito de hover (passar o mouse) nos links */
+header nav ul li a:hover {
+    color: #ff5733; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Seção "Início" */
+#home {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradiente de cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 100px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o título da seção "Início" */
+#home h1 {
+    font-size: 3em; /* Tamanho da fonte maior para o título */
+    font-weight: bold; /* Deixa o título em negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo para o parágrafo da seção "Início" */
+#home p {
+    font-size: 1.3em; /* Aumenta o tamanho da fonte */
+    margin-bottom: 30px; /* Espaçamento abaixo do parágrafo */
+}
+
+/* Estilo do botão de chamada para ação (CTA) */
+.cta-btn {
+    background-color: #ff5733; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 12px 25px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1.1em; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+/* Efeito de hover (passar o mouse) no botão */
+.cta-btn:hover {
+    background-color: #c13d2b; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Seção "Projetos" */
+#projects {
+    padding: 60px 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo branca */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título da seção "Projetos" */
+#projects h2 {
+    font-size: 2.5em; /* Tamanho maior do título */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para cada projeto */
+.project {
+    margin-bottom: 40px; /* Espaçamento entre os projetos */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Título do projeto */
+.project h3 {
+    font-size: 1.8em; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+/* Descrição do projeto */
+.project p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo da descrição */
+}
+
+/* Link do projeto */
+.project-link {
+    font-size: 1.1em; /* Tamanho do texto */
+    color: #0072ff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+/* Efeito de hover (passar o mouse) no link do projeto */
+.project-link:hover {
+    color: #ff5733; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o projeto (levanta um pouco) */
+.project:hover {
+    transform: translateY(-10px); /* Move o projeto para cima */
+}
+
+/* Seção "Sobre Mim" */
+#about {
+    padding: 60px 20px; /* Espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título da seção "Sobre Mim" */
+#about h2 {
+    font-size: 2.5em; /* Tamanho maior do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+/* Parágrafo da seção "Sobre Mim" */
+#about p {
+    font-size: 1.3em; /* Tamanho da fonte */
+    line-height: 1.8; /* Espaçamento entre as linhas */
+    max-width: 900px; /* Largura máxima do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    color: #666; /* Cor do texto */
+}
+
+/* Seção "Habilidades" */
+#skills {
+    padding: 60px 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo branca */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título da seção "Habilidades" */
+#skills h2 {
+    font-size: 2.5em; /* Tamanho maior do título */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+/* Lista de habilidades */
+#skills ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    display: flex; /* Alinha as habilidades em linha */
+    justify-content: center; /* Centraliza as habilidades */
+    flex-wrap: wrap; /* Permite que as habilidades quebrem para a linha seguinte em telas pequenas */
+}
+
+/* Estilo para cada habilidade */
+#skills ul li {
+    background-color: #0072ff; /* Cor de fundo azul */
+    color: white; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin: 10px; /* Espaçamento entre as habilidades */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+/* Efeito de hover (passar o mouse) nas habilidades */
+#skills ul li:hover {
+    background-color: #ff5733; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Seção "Contato" */
+#contact {
+    padding: 60px 20px; /* Espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título da seção "Contato" */
+#contact h2 {
+    font-size: 2.5em; /* Tamanho maior do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+/* Parágrafo da seção "Contato" */
+#contact p {
+    font-size: 1.3em; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+/* Texto do rodapé */
+footer p {
+    font-size: 1em; /* Tamanho do texto */
+    color: #ccc; /* Cor do texto */
+}
+
